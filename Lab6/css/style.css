@@ -1,0 +1,238 @@
+@font-face {
+    font-family: Open_Sans_Universal;
+    src: url(/fonts/OpenSans-VariableFont.ttf);
+}
+
+:root{
+    --bg-color:aquamarine;
+    --color-p: brown;
+    --bg-image: url(/img/bg_one.png);
+}
+
+html{
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+div{
+    display: block;
+    background-color: var(--bg-color);
+}
+
+.headers {
+    display: block;
+    margin: 0 30px 0 30px;
+    padding: 10px;
+    
+
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0 0 0 -9px;
+    background: rgb(39, 87, 87);
+    border-top: solid 3px #fff;
+    border-bottom: solid 3px #fff;
+    
+
+}
+
+
+.menu li{
+    float: left;
+    padding: 0 20px;
+
+    
+}
+
+.menu li:hover {
+  background: #223;
+}
+
+.menu li:first-child {
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.menu li a {
+  display: block;
+  padding: 0 10px;
+  text-decoration: none;
+  line-height: 40px;
+  color: #fff;
+  
+  
+}
+
+.menu ul {
+  display: none;
+  position: absolute;
+  list-style: none;
+  margin: -2px 0 0 -22px;
+  padding: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.menu ul li {
+  float: none;
+  position: relative;
+}
+
+.menu li:hover > ul {
+  display: block;
+  background: #222;
+  border: solid 3px #fff;
+  border-top: 0;
+
+  
+  -webkit-border-radius: 0 0 8px 8px;
+  border-radius: 0 0 8px 8px;
+  
+  -webkit-box-shadow:  0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow:  0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menu li:hover > ul li:hover {
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+.menu li li a:hover {
+  background: #000;
+}
+
+.menu ul li:last-child a,
+.menu ul li:last-child a:hover {
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+.containers{
+    margin: 4px 30px 10px 30px;
+    padding: 10px;
+    
+
+}
+
+img{
+    width: 75px;
+    height: 75px;
+    float: left;
+    padding: 4px;
+}
+
+h1,h2{
+    font-family: Open_Sans_Universal;
+    font-weight: 400;
+    font-size: 18px;
+    position: relative;
+
+}
+
+p{
+    font-family: Open_Sans_Universal;
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--color-p);
+
+
+}
+
+.descr{
+    display: flex;
+    flex-direction: column;
+}
+
+.leftsidebar{
+    width: 280px;
+    height: fit-content;
+    float: left;
+    padding: 0 10px 0 10px;
+    
+
+}
+
+.main{
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.rightsidebar{
+    width: 280px;
+    height: 100%;
+    float: right;
+    padding: 0 10px 0 10px;
+
+}
+
+.mapcenters{
+    margin: 0 30px 360px 30px;
+    padding: 10px;
+}
+
+.mapmed{
+    width: 1024px;
+    height: 898px;
+    margin: 20px 0 20px 100px;  
+        
+}
+
+.footer{
+    margin: 927px 30px 0 30px;
+    padding: 30px;
+}
+
+/* Слайдер */
+.slider{
+    max-width: 95%;
+    position: relative;
+    margin: -5px 0 0 31px;
+    height: 300px;
+}
+/* Картинка масштабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+/* Кнопки вперед и назад */
+.slider .previous, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* Анимация слайдов */
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
