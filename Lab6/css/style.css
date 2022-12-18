@@ -28,11 +28,10 @@ div{
 }
 
 .menu{
-    display: flex;
-    flex-direction: row;
+    display: block;
     list-style-type: none;
-    padding: 10px;
-    margin: 0 0 0 -9px;
+    padding: 10px 0 50px 10px;
+    margin: 0 -9px 0 -9px;
     background: rgb(39, 87, 87);
     border-top: solid 3px #fff;
     border-bottom: solid 3px #fff;
