@@ -471,3 +471,9 @@ p{
 }
 
 }
+
+.medsubscribe{
+    display: block;
+    margin: 0 30px 0 30px;
+    padding: 10px;
+}
