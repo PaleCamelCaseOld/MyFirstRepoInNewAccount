@@ -5,16 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Лабораторная работа 7 - Медицинский портал</title>
 	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
-	<link rel="stylesheet" type="text/css" href="/Lab6/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/Lab7/css/style.css">
 	<!-- <link rel="stylesheet" type="text/css" href=""> -->
-	<link rel="shortcut icon" href="/Lab6/img/favicon.png">
+	<link rel="shortcut icon" href="/Lab7/img/favicon.png">
 
 	
 </head>
 <body>
 	
 	<div class="headers">
-		<img src="/Lab6/img/logo_main.png" alt="Тут будет лого">
+		<img src="/Lab7/img/logo_main.png" alt="Тут будет лого">
 		<h1>Медицинский портал</h1>
 		<p class="descr">К нам приходят, чтобы получить знания о медицине</p>
 		<nav class="menu">
@@ -32,6 +32,7 @@
 			<li><a href="#contacts">Контакты</a></li>
 			<li><a href="#med">Наши медцентры</a></li>
 			<li><a href="#scribeblock">Оформить подписку</a></li>
+			<li><a href="#fb">Оставить отзыв</a></li>
 
 		</nav>
 	</div>
@@ -40,12 +41,12 @@
   
 		<!-- Первый слайд -->
 		<div class="item">
-			<img src="/Lab6/img/bg_transform.png">
+			<img src="/Lab7/img/bg_transform.png">
 		</div>
 	  
 		<!-- Второй слайд -->
 		<div class="item">
-			<img src="/Lab6/img/bg_two.png">
+			<img src="/Lab7/img/bg_two.png">
 		</div>
 	  
 			  
@@ -125,7 +126,7 @@
 	</div>
 	<div class="mapcenters">
 		<h2 id="med">Наши медцентры:</h2>
-		<img class="mapmed" src="/Lab6/img/maps.png" usemap="#medportal">
+		<img class="mapmed" src="/Lab7/img/maps.png" usemap="#medportal">
 		<map name="#medportal">
 			<area shape="circle" coords="705,153,30" href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA" title="Посмотрите наш медцентр в Витебске" alt="Витебск" target="_blank">
 			<area shape="circle" coords="115,417,30" href="https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%BE%D0%B4%D0%BD%D0%BE" title="Посмотрите наш медцентр в Гродно"  alt="Гродно" target="_blank">
@@ -136,7 +137,15 @@
 
 		</map>
 	</div>
+	<div class="feedback">
+		<h2 id="fb">Оставьте отзыв о нас</h2>
+		<p>Если вам понравилось качество оказываемых нами услуг или вы хотели бы выразить свое мнение/претензию</br> 
+		по этому поводу - оставьте свой отзыв в форме ниже, мы обязательно его рассмотрим, и, при необходимости, дадим ответ. 
+		</br></p>
+		<form action="feedback.php" method="post">
 
+		</form>
+	</div>
 	<div class="footer">
 		<p id="contacts">&copy; Все права защищены. <a href="#">Медицинский портал</a>.</p>
 		<p>Любое использование информации допускается только с согласия администрации сайта и указания ссылки на первоисточник</p>
@@ -144,6 +153,6 @@
 		<a href="#top">Вернуться в начало</a>
 	</div>
 	<script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js"></script>
-	<script defer type="text/javascript" src="/Lab6/js/slides.js"></script>
+	<script defer type="text/javascript" src="/Lab7/js/slides.js"></script>
 </body>
 </html>
