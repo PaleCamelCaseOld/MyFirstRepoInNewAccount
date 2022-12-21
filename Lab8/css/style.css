@@ -1,0 +1,382 @@
+@font-face {
+    font-family: Open_Sans_Universal;
+    src: url(/fonts/OpenSans-VariableFont.ttf);
+}
+
+:root {
+    --bg-color: aquamarine;
+    --color-p: brown;
+    --bg-image: url(/img/bg_one.png);
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+div {
+    display: block;
+    background-color: var(--bg-color);
+}
+
+.headers {
+    display: block;
+    margin: 0 30px 0 30px;
+    padding: 10px;
+
+
+}
+
+.menu {
+    display: block;
+    list-style-type: none;
+    padding: 10px 0 50px 10px;
+    margin: 0 -9px 0 -9px;
+    background: rgb(39, 87, 87);
+    border-top: solid 3px #fff;
+    border-bottom: solid 3px #fff;
+
+
+}
+
+
+.menu li {
+    float: left;
+    padding: 0 20px;
+
+
+}
+
+.menu li:hover {
+    background: #223;
+}
+
+.menu li:first-child {
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.menu li a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    line-height: 40px;
+    color: #fff;
+
+
+}
+
+.menu ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    margin: -2px 0 0 -22px;
+    padding: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.menu ul li {
+    float: none;
+    position: relative;
+}
+
+.menu li:hover>ul {
+    display: block;
+    background: #222;
+    border: solid 3px #fff;
+    border-top: 0;
+
+
+    -webkit-border-radius: 0 0 8px 8px;
+    border-radius: 0 0 8px 8px;
+
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menu li:hover>ul li:hover {
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.menu li li a:hover {
+    background: #000;
+}
+
+.menu ul li:last-child a,
+.menu ul li:last-child a:hover {
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.containers {
+    margin: 4px 30px 10px 30px;
+    padding: 10px;
+
+
+}
+
+img {
+    width: 75px;
+    height: 75px;
+    float: left;
+    padding: 4px;
+}
+
+h1,
+h2 {
+    font-family: Open_Sans_Universal;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+
+}
+
+p {
+    font-family: Open_Sans_Universal;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-p);
+
+
+}
+
+.descr {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftsidebar {
+    width: 280px;
+    height: fit-content;
+    float: left;
+    padding: 0 10px 0 10px;
+
+
+}
+
+.main {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.rightsidebar {
+    width: 280px;
+    height: 100%;
+    float: right;
+    padding: 0 10px 0 10px;
+
+}
+
+.mapcenters {
+    margin: 0 30px 360px 30px;
+    padding: 10px;
+}
+
+.mapmed {
+    width: 1024px;
+    height: 898px;
+    margin: 20px 0 20px 100px;
+
+}
+
+.medsubscribe {
+    display: block;
+    margin: 0 30px 10px 30px;
+    padding: 10px;
+}
+
+table {
+    border: 2px solid #223;
+    width: 100%;
+    border-spacing: 3px;
+    text-align: left;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    border-collapse: collapse;
+    color: #fff;
+
+
+}
+
+caption {
+    padding: 10px;
+    color: rgb(12, 12, 12);
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+}
+
+th {
+    border-bottom: 3px solid #B9B29F;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+}
+
+td a {
+    color: #fff;
+    text-decoration: none;
+}
+
+td a:hover {
+    color: #7FFFD4;
+}
+
+tr:nth-child(odd) {
+    background: #275757;
+}
+
+tr:nth-child(even) {
+    background: #A52A2A;
+}
+
+.feedback {
+    margin: 930px 30px 0px 30px;
+    padding: 10px;
+}
+
+.footer {
+    margin: 30px 30px 0 30px;
+    padding: 30px;
+}
+
+/* Слайдер */
+.slider {
+    max-width: 95%;
+    position: relative;
+    margin: -5px 0 0 31px;
+    height: 300px;
+}
+
+/* Картинка масштабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+/* Кнопки вперед и назад */
+.slider .previous,
+.slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Анимация слайдов */
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+/* form styles */
+form label {
+    display: grid;
+    font-size: 17px;
+    font-weight: 400;
+    width: 750px;
+    padding: 10px 0px;
+    color: #464646;
+}
+
+/** inputs and textarea**/
+input:not([type="submit"]),
+	textarea{
+	outline:none;
+	display:block;
+	padding:4px 8px;
+	border:1px dashed #DBDBDB;
+	color:#3F3F3F;
+	font-family:'Droid Sans',Tahoma,Arial,Verdana sans-serif;
+	font-size:14px;
+	border-radius:2px;
+	transition:background 0.2s linear,
+	box-shadow 0.6s linear;
+}
+
+input:not([type="submit"]):active,
+textarea:active,
+input:not([type="submit"]):focus,
+textarea:focus{
+	background:#F7F7F7;
+	border:dashed 1px #969696;
+	box-shadow:2px 2px 7px #E8E8E8 inset;
+}
+
+input:not([type="submit"]){
+	height: 20px;
+}
+
+button[type=submit]{
+    display: grid;
+    float: left;
+    padding: 3px;
+    width: 350px;
+    height: 25px;
+
+}
+
+button[type=reset]{
+    display: grid;
+    position: relative;
+    left: 4%;
+    width: 350px;
+    height: 25px;
+    padding: 2px;
+
+}
+
+
+textarea{
+	min-height:150px;
+	resize:vertical
+}
+
+/* placeholder */
+::-webkit-input-placeholder  {
+	color:#BABABA;
+	font-style:italic;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder{
+	color:#BABABA;
+	font-style:italic;
+}
+
