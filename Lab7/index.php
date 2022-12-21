@@ -147,8 +147,9 @@
 			по этому поводу - оставьте свой отзыв в форме ниже, мы обязательно его рассмотрим, и, при необходимости, дадим ответ.
 			</br></p>
 		<form action="feedback.php" method="post">
-			<label>Ваше имя: <input type="text" name="name"></label>
-			<label>Ваш email: <input type="text" name="email"></label>
+			<label>Ваше имя: <input type="text" name="name" required></label>
+			<label>Ваш email: <input type="email" name="email" required></label>
+			<label>Выберите дату:<input type="date" name="date" required></label>
 			<label>Сообщение: <textarea name="message"></textarea></label>
 			<button type="submit" name="send" value="Отправить">Отправить</button>
 			<button type="reset" value="Сбросить">Сбросить</button>
