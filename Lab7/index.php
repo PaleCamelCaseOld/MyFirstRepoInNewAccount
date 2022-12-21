@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Лабораторная работа 6 - Медицинский портал</title>
+	<title>Лабораторная работа 7 - Медицинский портал</title>
 	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
-	<link rel="stylesheet" type="text/css" href="/Lab6/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/Lab7/css/style.css">
 	<!-- <link rel="stylesheet" type="text/css" href=""> -->
-	<link rel="shortcut icon" href="/Lab6/img/favicon.png">
+	<link rel="shortcut icon" href="/Lab7/img/favicon.png">
 
-	
+
 </head>
+
 <body>
-	
+
 	<div class="headers">
-		<img src="/Lab6/img/logo_main.png" alt="Тут будет лого">
+		<img src="/Lab7/img/logo_main.png" alt="Тут будет лого">
 		<h1>Медицинский портал</h1>
 		<p class="descr">К нам приходят, чтобы получить знания о медицине</p>
 		<nav class="menu">
@@ -28,27 +30,28 @@
 					<li><a href="" title="Совет 3">Совет 3</a></li>
 					<li><a href="" title="Совет 4">Совет 4</a></li>
 				</ul>
-				</li>		
+			</li>
 			<li><a href="#contacts">Контакты</a></li>
 			<li><a href="#med">Наши медцентры</a></li>
 			<li><a href="#scribeblock">Оформить подписку</a></li>
+			<li><a href="#fb">Оставить отзыв</a></li>
 
 		</nav>
 	</div>
-	
+
 	<div class="slider">
-  
+
 		<!-- Первый слайд -->
 		<div class="item">
-			<img src="/Lab6/img/bg_transform.png">
+			<img src="/Lab7/img/bg_transform.png">
 		</div>
-	  
+
 		<!-- Второй слайд -->
 		<div class="item">
-			<img src="/Lab6/img/bg_two.png">
+			<img src="/Lab7/img/bg_two.png">
 		</div>
-	  
-			  
+
+
 		<!-- Кнопки-стрелочки -->
 		<a class="previous" onclick="previousSlide()">&#10094;</a>
 		<a class="next" onclick="nextSlide()">&#10095;</a>
@@ -62,28 +65,30 @@
 				Aliquid ipsum amet sunt expedita enim voluptatum, quaerat iure, non quod accusantium nihil blanditiis itaque maxime distinctio at quos voluptatem placeat laborum beatae sed aliquam aut eveniet perferendis voluptatibus! Labore.
 				Reprehenderit, dolores aspernatur. Ratione molestias facere numquam, eveniet, reprehenderit doloremque dolores in beatae illum deleniti quo mollitia. Officia repudiandae optio nemo tenetur laboriosam. Iure, a eligendi. Voluptas inventore sed blanditiis.
 			</p>
-			<p><blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, dolores?</blockquote></p>
+			<p>
+			<blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, dolores?</blockquote>
+			</p>
 		</div>
-		
+
 		<div class="rightsidebar">
 			<h2 id="advice">Полезные статьи</h2>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos nulla illo aut ab aspernatur in harum non odio reiciendis doloremque eveniet, mollitia, voluptatum ullam quo nostrum odit esse et.
-			Quo nesciunt molestias eaque neque repudiandae? Officiis repellat praesentium veritatis totam nulla in culpa perspiciatis nobis? Repudiandae labore aut veniam eius odio animi repellat. Nostrum exercitationem facere at! Omnis, in.
-			Nihil doloremque eaque accusamus nam reiciendis, blanditiis labore fugit quas maxime quisquam perspiciatis quidem molestias facere veniam assumenda. Ad delectus iusto quidem reprehenderit ullam suscipit vitae, vel alias error repellendus.
-			Quasi aliquam aliquid iste voluptas soluta dolor, veritatis dignissimos eius adipisci quae! Ipsa, accusamus recusandae. Officia dolorem velit, explicabo tenetur libero quaerat hic, iusto deleniti corporis ea nostrum temporibus impedit?</p>
+				Quo nesciunt molestias eaque neque repudiandae? Officiis repellat praesentium veritatis totam nulla in culpa perspiciatis nobis? Repudiandae labore aut veniam eius odio animi repellat. Nostrum exercitationem facere at! Omnis, in.
+				Nihil doloremque eaque accusamus nam reiciendis, blanditiis labore fugit quas maxime quisquam perspiciatis quidem molestias facere veniam assumenda. Ad delectus iusto quidem reprehenderit ullam suscipit vitae, vel alias error repellendus.
+				Quasi aliquam aliquid iste voluptas soluta dolor, veritatis dignissimos eius adipisci quae! Ipsa, accusamus recusandae. Officia dolorem velit, explicabo tenetur libero quaerat hic, iusto deleniti corporis ea nostrum temporibus impedit?</p>
 		</div>
 		<div class="main">
 			<h2 id="news">Последние новости</h2>
 			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim maiores quidem ab a similique error! Aspernatur pariatur, molestias quo autem officiis, at sit, sequi earum reiciendis cum optio deleniti voluptatum.
-			Laborum laboriosam eligendi dolorum incidunt accusamus eius beatae? Veniam maiores debitis eius quia ipsum excepturi ad in dignissimos, natus expedita obcaecati ut aliquid laudantium dolorem quo tempore suscipit sapiente asperiores?
-			Dicta dignissimos asperiores enim recusandae ipsa praesentium culpa possimus veniam architecto. Repellendus sunt, eos consectetur libero eius culpa? Doloremque quae deleniti blanditiis tempore aperiam distinctio unde velit consectetur minima. Repellendus?
-			Itaque provident magni eveniet natus ipsam sapiente fugit ex omnis repudiandae dignissimos id saepe quae enim quasi neque accusamus deserunt similique pariatur, quidem dolorem ipsa iusto dolorum consectetur illo! Facere.</p>
+				Laborum laboriosam eligendi dolorum incidunt accusamus eius beatae? Veniam maiores debitis eius quia ipsum excepturi ad in dignissimos, natus expedita obcaecati ut aliquid laudantium dolorem quo tempore suscipit sapiente asperiores?
+				Dicta dignissimos asperiores enim recusandae ipsa praesentium culpa possimus veniam architecto. Repellendus sunt, eos consectetur libero eius culpa? Doloremque quae deleniti blanditiis tempore aperiam distinctio unde velit consectetur minima. Repellendus?
+				Itaque provident magni eveniet natus ipsam sapiente fugit ex omnis repudiandae dignissimos id saepe quae enim quasi neque accusamus deserunt similique pariatur, quidem dolorem ipsa iusto dolorum consectetur illo! Facere.</p>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor id nihil tempore odit voluptas, minima non mollitia, veniam eius a voluptate soluta deserunt sit nisi corrupti, dolores quidem officiis corporis.
-			Numquam perspiciatis voluptatum doloribus eveniet, amet beatae mollitia illo blanditiis deleniti ea natus quis doloremque officia aut deserunt rem similique repellat maiores assumenda labore eaque? Velit neque nisi distinctio nulla?
-			Iste blanditiis qui consequatur aperiam at nemo ut ab doloribus commodi impedit veniam, officiis labore veritatis sed corporis repudiandae, aspernatur eaque, omnis non officia nihil! Nihil itaque cum necessitatibus maxime!</p>
+				Numquam perspiciatis voluptatum doloribus eveniet, amet beatae mollitia illo blanditiis deleniti ea natus quis doloremque officia aut deserunt rem similique repellat maiores assumenda labore eaque? Velit neque nisi distinctio nulla?
+				Iste blanditiis qui consequatur aperiam at nemo ut ab doloribus commodi impedit veniam, officiis labore veritatis sed corporis repudiandae, aspernatur eaque, omnis non officia nihil! Nihil itaque cum necessitatibus maxime!</p>
 			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique quod deserunt quae suscipit nulla ad eveniet deleniti praesentium, earum tenetur autem itaque sunt voluptates non quas perferendis porro vero cum.
-			Quia omnis natus labore tenetur voluptatibus velit fugiat asperiores perferendis distinctio, iure rerum voluptatem nobis unde esse recusandae eligendi veritatis laudantium est eveniet ducimus expedita. Assumenda rem tempora dignissimos magni.
-			Vel, nostrum id rem suscipit perferendis nulla repellendus illum sit error! Velit provident maiores necessitatibus ex, dolor impedit assumenda fuga cupiditate tempore itaque rem ad veritatis laborum similique magni laboriosam!
+				Quia omnis natus labore tenetur voluptatibus velit fugiat asperiores perferendis distinctio, iure rerum voluptatem nobis unde esse recusandae eligendi veritatis laudantium est eveniet ducimus expedita. Assumenda rem tempora dignissimos magni.
+				Vel, nostrum id rem suscipit perferendis nulla repellendus illum sit error! Velit provident maiores necessitatibus ex, dolor impedit assumenda fuga cupiditate tempore itaque rem ad veritatis laborum similique magni laboriosam!
 			</p>
 		</div>
 	</div>
@@ -93,11 +98,11 @@
 				<h2 id="scribeblock">Оформите подписку на одно из наших Интернет-изданий:</h2>
 			</caption>
 			<thead>
-					<th>Тип издания</th>
-					<th>Количество страниц</th>
-					<th>Цена, руб.</th>
-					<th>Оплата в один клик</th>
-				</thead>
+				<th>Тип издания</th>
+				<th>Количество страниц</th>
+				<th>Цена, руб.</th>
+				<th>Оплата в один клик</th>
+			</thead>
 			<tbody>
 				<tr>
 					<td>Стандартное издание</td>
@@ -109,26 +114,26 @@
 					<td>Подписка Плюс(выгодное предложение!)</td>
 					<td>75</td>
 					<td>1000</td>
-					
+
 				</tr>
 				<tr>
 					<td>Подписка Плюс-Про(Версия с DVD и анонсами)</td>
 					<td>110</td>
 					<td>1300</td>
-					
-					
+
+
 				</tr>
-				
+
 			</tbody>
-			
+
 		</table>
 	</div>
 	<div class="mapcenters">
 		<h2 id="med">Наши медцентры:</h2>
-		<img class="mapmed" src="/Lab6/img/maps.png" usemap="#medportal">
+		<img class="mapmed" src="/Lab7/img/maps.png" usemap="#medportal">
 		<map name="#medportal">
 			<area shape="circle" coords="705,153,30" href="https://ru.wikipedia.org/wiki/%D0%92%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA" title="Посмотрите наш медцентр в Витебске" alt="Витебск" target="_blank">
-			<area shape="circle" coords="115,417,30" href="https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%BE%D0%B4%D0%BD%D0%BE" title="Посмотрите наш медцентр в Гродно"  alt="Гродно" target="_blank">
+			<area shape="circle" coords="115,417,30" href="https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%BE%D0%B4%D0%BD%D0%BE" title="Посмотрите наш медцентр в Гродно" alt="Гродно" target="_blank">
 			<area shape="circle" coords="484,412,30" href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BD%D1%81%D0%BA" title="Посмотрите наш медцентр в Минске" alt="Минск" target="_blank">
 			<area shape="circle" coords="767,367,30" href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D0%B3%D0%B8%D0%BB%D1%91%D0%B2" title="Посмотрите наш медцентр в Могилеве" alt="Могилев" target="_blank">
 			<area shape="circle" coords="91,667,30" href="https://ru.wikipedia.org/wiki/%D0%91%D1%80%D0%B5%D1%81%D1%82" title="Посмотрите наш медцентр в Бресте" alt="Брест" target="_blank">
@@ -136,7 +141,20 @@
 
 		</map>
 	</div>
-
+	<div class="feedback">
+		<h2 id="fb">Оставьте отзыв о нас</h2>
+		<p>Если вам понравилось качество оказываемых нами услуг или вы хотели бы выразить свое мнение/претензию</br>
+			по этому поводу - оставьте свой отзыв в форме ниже, мы обязательно его рассмотрим, и, при необходимости, дадим ответ.
+			</br></p>
+		<form action="feedback.php" method="post">
+			<label>Ваше имя: <input type="text" name="name" required></label>
+			<label>Ваш email: <input type="email" name="email" required></label>
+			<label>Выберите дату:<input type="date" name="date" required></label>
+			<label>Сообщение: <textarea name="message"></textarea></label>
+			<button type="submit" name="send" value="Отправить">Отправить</button>
+			<button type="reset" value="Сбросить">Сбросить</button>
+		</form>
+	</div>
 	<div class="footer">
 		<p id="contacts">&copy; Все права защищены. <a href="#">Медицинский портал</a>.</p>
 		<p>Любое использование информации допускается только с согласия администрации сайта и указания ссылки на первоисточник</p>
@@ -144,6 +162,7 @@
 		<a href="#top">Вернуться в начало</a>
 	</div>
 	<script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js"></script>
-	<script defer type="text/javascript" src="/Lab6/js/slides.js"></script>
+	<script defer type="text/javascript" src="/Lab7/js/slides.js"></script>
 </body>
+
 </html>
